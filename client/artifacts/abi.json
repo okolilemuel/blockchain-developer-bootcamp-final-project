@@ -1,0 +1,225 @@
+[{
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "anonymous": false,
+        "inputs": [{
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "room",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "guest",
+                "type": "address"
+            }
+        ],
+        "name": "LogRoomBooked",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [{
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "room",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "guest",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "addedDays",
+                "type": "uint256"
+            }
+        ],
+        "name": "LogRoomBookingExtended",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [{
+                "indexed": true,
+                "internalType": "address",
+                "name": "previousOwner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event"
+    },
+    {
+        "stateMutability": "payable",
+        "type": "fallback",
+        "payable": true
+    },
+    {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [{
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+        }],
+        "stateMutability": "view",
+        "type": "function",
+        "constant": true
+    },
+    {
+        "inputs": [],
+        "name": "renounceOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "totalNumberOfRooms",
+        "outputs": [{
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+        }],
+        "stateMutability": "view",
+        "type": "function",
+        "constant": true
+    },
+    {
+        "inputs": [{
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+        }],
+        "name": "transferOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "stateMutability": "payable",
+        "type": "receive",
+        "payable": true
+    },
+    {
+        "inputs": [{
+                "internalType": "uint256",
+                "name": "roomId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "bookingDuration",
+                "type": "uint256"
+            }
+        ],
+        "name": "createBooking",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function",
+        "payable": true
+    },
+    {
+        "inputs": [{
+                "internalType": "uint256",
+                "name": "roomId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "addedBookingDuration",
+                "type": "uint256"
+            }
+        ],
+        "name": "extendBooking",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function",
+        "payable": true
+    },
+    {
+        "inputs": [{
+            "internalType": "uint256",
+            "name": "roomId",
+            "type": "uint256"
+        }],
+        "name": "isRoomAvailable",
+        "outputs": [{
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+        }],
+        "stateMutability": "view",
+        "type": "function",
+        "constant": true
+    },
+    {
+        "inputs": [],
+        "name": "getAvailableRooms",
+        "outputs": [{
+            "internalType": "uint256[20]",
+            "name": "",
+            "type": "uint256[20]"
+        }],
+        "stateMutability": "view",
+        "type": "function",
+        "constant": true
+    },
+    {
+        "inputs": [],
+        "name": "getRoomPrice",
+        "outputs": [{
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+        }],
+        "stateMutability": "view",
+        "type": "function",
+        "constant": true
+    },
+    {
+        "inputs": [{
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+        }],
+        "name": "setRoomPrice",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getBalance",
+        "outputs": [{
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+        }],
+        "stateMutability": "view",
+        "type": "function",
+        "constant": true
+    },
+    {
+        "inputs": [],
+        "name": "withdraw",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function",
+        "payable": true
+    }
+]
