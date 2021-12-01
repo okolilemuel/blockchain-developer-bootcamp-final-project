@@ -33,7 +33,7 @@
 
 ## Screencast link
 
-<https://youtu.be/---------->
+<https://www.loom.com/share/8b84d7a770df4ae28e83f5b8ed7668ad>
 
 ## Public Ethereum wallet for certification
 
