@@ -35,7 +35,7 @@ export default function Booking(){
     return (
         <div className="relative flex flex-wrap items-center justify-center w-full h-screen text-white bg-gray-300">
             {address && <div className="absolute top-0 w-full text-center text-black">
-                    <div className="text-4xl">Book A Room</div>
+                    <div className="text-4xl">Book A Room For Your Cat</div>
                     <div>You Address: {formatAddress(address)}</div>
                 </div>}
             {

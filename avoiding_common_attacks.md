@@ -6,11 +6,11 @@ Specific compiler pragma `0.8.0` used in contracts to avoid accidental bug inclu
 
 ## SWC-105 (Unprotected Ether Withdrawal)
 
-`withdraw` is protected with OpenZeppelin `Ownable`'s `onlyOwner` modifier.
+`withdraw` , `getBalance` and `setRoomPrice` is protected with OpenZeppelin `Ownable`'s `onlyOwner` modifier.
 
 ## SWC-104 (Unchecked Call Return Value)
 
-The return value from a call to the owner's address in `addAsTenant` is checked with `require` to ensure transaction rollback if call fails.
+The return value from a call to the owner's address in `withdraw` is checked with `require` to ensure transaction rollback if call fails.
 
 ## Modifiers used only for validation
 

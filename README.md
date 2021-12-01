@@ -2,7 +2,7 @@
 
 ## Deployed version url
 
-<https://final-project-jsur.vercel.app>
+<https://amazing-snyder-f790cc.netlify.app>
 
 ## How to run this project locally
 
@@ -25,36 +25,35 @@
 ### Frontend
 
 - `cd client`
-- `yarn install`
-- `yarn start`
+- `npm install`
+- `npm run build`
+- `npm run export`
+- `npm run start`
 - Open `http://localhost:3000`
 
 ## Screencast link
 
-<https://youtu.be/enwECpgoQUg>
+<https://youtu.be/---------->
 
 ## Public Ethereum wallet for certification
 
-`0x109B58ED673Bb241d170b87e4F88c5f426781fC9`
+`0xCbAfb2906a3C2acb4207295779b59d4909aDce12`
 
 ## Project description
 
-User and apartment owner enter an agreement for renting a property, i.e. exchanging usage rights to an apartment for as long as payments are made to a specific Ethereum account before the agreed deadline.
+A simple cat hotel, where a user can book a room for their cats for a number of days at a cost.
 
-User receives a keycode / access token to the apartment after first payment. If a user's payments are late, they will receive a reminder after one week. After e.g. 30 days (variable depending on local jurisdiction) of no payments, usage rights will be automatically transferred back to owner and apartment access rights will be revoked from user. User agrees to this procedure when entering contract with owner.
+User logs into the app with metamask, views list of available cat rooms, and books one for a number of days. The user can choose to book more rooms for any number of days they choose, so far the room is available. The user can also extend their booking in a room, sio far they are able to pay the right amount.
 
-- Checking for received payments and transferring ownership back to owner on non-payment cases could be scheduled with e.g. Gelato Network (<https://docs.gelato.network/tutorial>).
-- Opening door locks could be done with an app with smart locks, e.g. <https://api.getkisi.com/docs>. Smart lock APIs won't be explored in this project.
+The contract owner can change the booking price of the rooms and also able to withdraw all funds in the contract as booking profits
 
 ## Simple workflow
 
 1. Enter service web site
 2. Login with Metamask
-3. Browse apartments
-4. Select apartment
-5. Agree on contract, pay first installment with Metamask (smart contract call)
-6. Tenantship is transferred to user account (smart contract call)
-7. Receive key phrase / token / OTP / etc. to access apartment with smart lock app (this part will be mocked in project)
+3. Browse list of available cat rooms
+4. Book an available cat room
+5. Extend room booking
 
 ## Directory structure
 
